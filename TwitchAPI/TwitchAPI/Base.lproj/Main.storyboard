@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -79,11 +81,104 @@
                     <connections>
                         <outlet property="gamesCollectionView" destination="xVT-nS-ycY" id="194-TI-1uR"/>
                         <outlet property="loadingIndicator" destination="Wi3-rw-F0m" id="Slr-mv-7Q5"/>
+                        <segue destination="1bz-rO-0vV" kind="show" identifier="streamShowVC" id="tos-8K-9Oc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1723.1884057971015" y="147.55434782608697"/>
+        </scene>
+        <!--Streams View Controller-->
+        <scene sceneID="3h0-Fj-qcg">
+            <objects>
+                <viewController id="1bz-rO-0vV" customClass="StreamsViewController" customModule="TwitchAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XwN-E6-8Wg"/>
+                        <viewControllerLayoutGuide type="bottom" id="2bD-Gt-oo5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wm1-gc-PYb">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kUa-uJ-0Tk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StreamCell" rowHeight="200" id="ETo-1r-vnF" customClass="StreamCell" customModule="TwitchAPI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ETo-1r-vnF" id="99b-pu-nqb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JiT-vE-0Sw">
+                                                    <rect key="frame" x="8" y="8" width="398" height="189.66666666666666"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Lmw-ZJ-nnq">
+                                                    <rect key="frame" x="16" y="126.66666666666666" width="318" height="56.999999999999972"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broadcaster" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjL-ng-B5e">
+                                                            <rect key="frame" x="0.0" y="0.0" width="318" height="20.333333333333329"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stream Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfg-12-HQr">
+                                                            <rect key="frame" x="0.0" y="20.333333333333329" width="318" height="19.666666666666657"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viewers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2d5-7Q-dxb">
+                                                            <rect key="frame" x="0.0" y="39.999999999999986" width="318" height="17"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JiT-vE-0Sw" firstAttribute="leading" secondItem="99b-pu-nqb" secondAttribute="leading" constant="8" id="AaX-Ql-kAD"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Lmw-ZJ-nnq" secondAttribute="bottom" constant="8" id="K30-Vo-ged"/>
+                                                <constraint firstItem="Lmw-ZJ-nnq" firstAttribute="width" secondItem="JiT-vE-0Sw" secondAttribute="width" multiplier="0.8" id="NOs-zF-oku"/>
+                                                <constraint firstItem="Lmw-ZJ-nnq" firstAttribute="leading" secondItem="99b-pu-nqb" secondAttribute="leadingMargin" constant="8" id="QkE-ZR-4iQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="JiT-vE-0Sw" secondAttribute="bottom" constant="2" id="VNH-Xd-NQG"/>
+                                                <constraint firstItem="JiT-vE-0Sw" firstAttribute="top" secondItem="99b-pu-nqb" secondAttribute="top" constant="8" id="dF2-XO-Rta"/>
+                                                <constraint firstAttribute="trailing" secondItem="JiT-vE-0Sw" secondAttribute="trailing" constant="8" id="qh7-wN-2eo"/>
+                                                <constraint firstItem="Lmw-ZJ-nnq" firstAttribute="height" secondItem="JiT-vE-0Sw" secondAttribute="height" multiplier="0.3" id="wzR-Tc-pby"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="broadcasterNameLabel" destination="bjL-ng-B5e" id="G3M-x6-lti"/>
+                                            <outlet property="streamImageView" destination="JiT-vE-0Sw" id="IWa-5t-kCh"/>
+                                            <outlet property="titleLabel" destination="Zfg-12-HQr" id="rJB-wp-A7s"/>
+                                            <outlet property="viewersLabel" destination="2d5-7Q-dxb" id="ZKz-jL-DK5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1bz-rO-0vV" id="rFw-w3-git"/>
+                                    <outlet property="delegate" destination="1bz-rO-0vV" id="0zW-qB-hHC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kUa-uJ-0Tk" firstAttribute="leading" secondItem="wm1-gc-PYb" secondAttribute="leading" id="B1l-cF-KxB"/>
+                            <constraint firstItem="2bD-Gt-oo5" firstAttribute="top" secondItem="kUa-uJ-0Tk" secondAttribute="bottom" id="MJ3-Xd-6Vv"/>
+                            <constraint firstItem="kUa-uJ-0Tk" firstAttribute="top" secondItem="XwN-E6-8Wg" secondAttribute="bottom" id="fBX-B0-Yq6"/>
+                            <constraint firstAttribute="trailing" secondItem="kUa-uJ-0Tk" secondAttribute="trailing" id="ncp-Dg-wGN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="streamsTableView" destination="kUa-uJ-0Tk" id="T5O-DY-owf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7NZ-4W-vgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2515.9420289855075" y="147.55434782608697"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8zQ-nf-LYy">
@@ -106,7 +201,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QdD-D1-uXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="815.94202898550736" y="147.55434782608697"/>
+            <point key="canvasLocation" x="920" y="148"/>
         </scene>
     </scenes>
 </document>

@@ -33,6 +33,10 @@
 		04E4E18F206FE6B600F017D5 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4E18E206FE6B600F017D5 /* GameCell.swift */; };
 		04E4E196206FEBA500F017D5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4E195206FEBA500F017D5 /* Game.swift */; };
 		04E4E199206FF2D900F017D5 /* GameDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4E198206FF2D900F017D5 /* GameDataService.swift */; };
+		04E4E19B207013D300F017D5 /* StreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4E19A207013D300F017D5 /* StreamsViewController.swift */; };
+		04E4E19D2070156800F017D5 /* StreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4E19C2070156800F017D5 /* StreamCell.swift */; };
+		04E4E19F207016C000F017D5 /* StreamDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4E19E207016C000F017D5 /* StreamDataService.swift */; };
+		04E4E1A120701C4000F017D5 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4E1A020701C4000F017D5 /* Stream.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +69,10 @@
 		04E4E18E206FE6B600F017D5 /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
 		04E4E195206FEBA500F017D5 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		04E4E198206FF2D900F017D5 /* GameDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDataService.swift; sourceTree = "<group>"; };
+		04E4E19A207013D300F017D5 /* StreamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamsViewController.swift; sourceTree = "<group>"; };
+		04E4E19C2070156800F017D5 /* StreamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamCell.swift; sourceTree = "<group>"; };
+		04E4E19E207016C000F017D5 /* StreamDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamDataService.swift; sourceTree = "<group>"; };
+		04E4E1A020701C4000F017D5 /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				04E4E18A206FE02600F017D5 /* GamesViewController.swift */,
+				04E4E19A207013D300F017D5 /* StreamsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -165,6 +174,7 @@
 				04E4E157206FCFFD00F017D5 /* LaunchScreen.storyboard */,
 				04E4E15A206FCFFD00F017D5 /* Info.plist */,
 				04E4E18E206FE6B600F017D5 /* GameCell.swift */,
+				04E4E19C2070156800F017D5 /* StreamCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -181,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				04E4E195206FEBA500F017D5 /* Game.swift */,
+				04E4E1A020701C4000F017D5 /* Stream.swift */,
 			);
 			name = Models;
 			path = ..;
@@ -190,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				04E4E198206FF2D900F017D5 /* GameDataService.swift */,
+				04E4E19E207016C000F017D5 /* StreamDataService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -271,6 +283,8 @@
 				04E4E17E206FDFAC00F017D5 /* Notifications.swift in Sources */,
 				04E4E17F206FDFAC00F017D5 /* ParameterEncoding.swift in Sources */,
 				04E4E17A206FDFAC00F017D5 /* Alamofire.swift in Sources */,
+				04E4E19D2070156800F017D5 /* StreamCell.swift in Sources */,
+				04E4E19B207013D300F017D5 /* StreamsViewController.swift in Sources */,
 				04E4E189206FDFAC00F017D5 /* Validation.swift in Sources */,
 				04E4E181206FDFAC00F017D5 /* Response.swift in Sources */,
 				04E4E184206FDFAC00F017D5 /* ServerTrustPolicy.swift in Sources */,
@@ -280,6 +294,8 @@
 				04E4E179206FDFAC00F017D5 /* AFError.swift in Sources */,
 				04E4E18B206FE02600F017D5 /* GamesViewController.swift in Sources */,
 				04E4E188206FDFAC00F017D5 /* Timeline.swift in Sources */,
+				04E4E19F207016C000F017D5 /* StreamDataService.swift in Sources */,
+				04E4E1A120701C4000F017D5 /* Stream.swift in Sources */,
 				04E4E17D206FDFAC00F017D5 /* NetworkReachabilityManager.swift in Sources */,
 				04E4E187206FDFAC00F017D5 /* TaskDelegate.swift in Sources */,
 				04E4E18D206FE03900F017D5 /* Constants.swift in Sources */,

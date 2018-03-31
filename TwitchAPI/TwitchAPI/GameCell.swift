@@ -15,6 +15,8 @@ class GameCell: UICollectionViewCell {
     func configureCell(_ game: Game) {
         if game.image != nil {
             imageView.image = game.image
+            imageView.layer.cornerRadius = 10
+            imageView.layer.masksToBounds = true
         }
     }
     
