@@ -1,2 +1,2 @@
-# REST-API by Konstantin Kokorin
+# TwitchAPI by Konstantin Kokorin
 Creating simple app using the Twitch API.
