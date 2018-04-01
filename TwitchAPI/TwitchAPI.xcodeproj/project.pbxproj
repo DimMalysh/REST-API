@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04518BD72070E32B00A5E9F4 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04518BD62070E32B00A5E9F4 /* ChannelViewController.swift */; };
 		04E4E14F206FCFFD00F017D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4E14E206FCFFD00F017D5 /* AppDelegate.swift */; };
 		04E4E154206FCFFD00F017D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E4E152206FCFFD00F017D5 /* Main.storyboard */; };
 		04E4E156206FCFFD00F017D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E4E155206FCFFD00F017D5 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04518BD62070E32B00A5E9F4 /* ChannelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
 		04E4E14B206FCFFD00F017D5 /* TwitchAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitchAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E4E14E206FCFFD00F017D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04E4E153206FCFFD00F017D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				04E4E18A206FE02600F017D5 /* GamesViewController.swift */,
 				04E4E19A207013D300F017D5 /* StreamsViewController.swift */,
+				04518BD62070E32B00A5E9F4 /* ChannelViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				04E4E17C206FDFAC00F017D5 /* MultipartFormData.swift in Sources */,
 				04E4E185206FDFAC00F017D5 /* SessionDelegate.swift in Sources */,
 				04E4E199206FF2D900F017D5 /* GameDataService.swift in Sources */,
+				04518BD72070E32B00A5E9F4 /* ChannelViewController.swift in Sources */,
 				04E4E18F206FE6B600F017D5 /* GameCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

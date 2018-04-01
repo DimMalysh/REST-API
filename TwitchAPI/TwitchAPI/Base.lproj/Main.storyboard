@@ -174,11 +174,30 @@
                     </view>
                     <connections>
                         <outlet property="streamsTableView" destination="kUa-uJ-0Tk" id="T5O-DY-owf"/>
+                        <segue destination="sus-PL-4uX" kind="show" identifier="channelShowVC" id="4Ok-O2-SGn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7NZ-4W-vgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2515.9420289855075" y="147.55434782608697"/>
+            <point key="canvasLocation" x="1723" y="889"/>
+        </scene>
+        <!--Channel View Controller-->
+        <scene sceneID="dkr-jp-zvw">
+            <objects>
+                <viewController id="sus-PL-4uX" customClass="ChannelViewController" customModule="TwitchAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jbe-eh-o99"/>
+                        <viewControllerLayoutGuide type="bottom" id="hrK-f5-1K7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IpF-cQ-IGD">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1Z-CH-GcJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="889"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8zQ-nf-LYy">
